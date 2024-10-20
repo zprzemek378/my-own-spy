@@ -9,5 +9,10 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script type="text/javascript">
+      window.onbeforeunload = function () {
+        return "Dude, are you sure you want to leave? Think of the game!";
+      };
+    </script>
   </body>
 </html>
