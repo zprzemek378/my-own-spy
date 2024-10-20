@@ -1,4 +1,9 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import {
+  Navigate,
+  Route,
+  BrowserRouter as Router,
+  Routes,
+} from "react-router-dom";
 import SelectNumberOfPlayers from "./components/SelectNumberOfPlayers";
 import SelectNames from "./components/SelectNames";
 import Begin from "./components/Begin";
@@ -105,6 +110,8 @@ function App() {
               />
             }
           />
+
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Router>
     </ThemeProvider>
