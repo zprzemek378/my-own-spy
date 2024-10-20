@@ -5,7 +5,6 @@ import Begin from "./components/Begin";
 import { useState } from "react";
 import { ThemeProvider } from "@emotion/react";
 import GiveRoles from "./components/GiveRoles";
-import { muiTheme } from "./providers/MuiProvider";
 import AskingQuestions from "./components/AskingQuestions";
 import ResultsBar from "./components/ResultsBar";
 import ShowSpies from "./components/ShowSpies";
@@ -13,6 +12,7 @@ import BeforeAskingQuestions from "./components/BeforeAskingQuestions";
 import ShowWord from "./components/ShowWord";
 import AddPoints from "./components/AddPoints";
 import { wordLibrary } from "./wordLibrary";
+import { muiTheme } from "./providers/muiProvider";
 
 function App() {
   const [showResultsBar, setShowResultsBar] = useState<boolean>(false);
