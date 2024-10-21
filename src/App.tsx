@@ -47,7 +47,7 @@ function App() {
   return (
     <ThemeProvider theme={muiTheme}>
       {showResultsBar && <ResultsBar names={names} points={points} />}
-      <Router basename="/my-own-spy">
+      <Router>
         <Routes>
           <Route path="/" element={<Begin />} />
           <Route
